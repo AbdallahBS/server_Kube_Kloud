@@ -976,7 +976,7 @@ const getAllUserServices = async (req, res) => {
   try {
     await client.connect();
     const query = `
-      SELECT us.*, c.firstname || ' ' || c.lastname AS client_name , t.title AS service_name
+      SELECT c.firstname || ' ' || c.lastname AS client_name , t.title AS service_name
       FROM user_service us
       JOIN client c ON us.user_id = c.id
       JOIN technologies t ON us.service_id = t.id

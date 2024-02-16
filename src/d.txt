@@ -1,0 +1,5 @@
+const { Send, getMail,deleteMail,
+  addService,getService,
+  addBlog,getBlogs,modifyBlog,deleteBlog,
+  createTable,addTechno,getAllTechnos,modifyTechno,deleteTechno ,
+  addQ,getQ, register, verifyUser, login, getUser,} = require('../controller/appController.js');
